@@ -56,6 +56,18 @@ Connect the boards while powered off, then power them on.
 - Two jumper wires for signal and common ground
 - USB power/programming connections appropriate for the boards
 
+## Hardware Implementation
+
+The FPGA-to-FPGA UART communication system uses two ZedBoard (XC7Z020) development boards.
+
+- **ZedBoard 1:** UART Transmitter
+- **ZedBoard 2:** UART Receiver
+- **Host PC:** Vivado software for FPGA design and implementation.
+- **UART connection:** JA1 (TX) to JA1 (RX), with common GND.
+
+### Hardware Setup
+
+![FPGA-to-FPGA UART Hardware Setup](uart_hardware_setup.jpg)
 ## Create the transmitter project in Vivado
 
 1. Open Vivado and select **Create Project**.
